@@ -1,0 +1,85 @@
+{% extends "index.html" %}
+{% block content %}
+
+<div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Beauty Behind the Madness
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" <img src="{{url_for('static', filename='img/kendrick.jpg')}}">
+            </div>
+
+            <div class="col-md-4">
+                <h3>Album Description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                <h3>Album Details</h3>
+                <ul>
+                    <li>Release date:</li>
+                    <li>Artis:</li>
+                    <li>Gerne:</li>
+                    <li>Labels:</li>
+					<li>Nominations:</li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Other Albums</h3>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="/logic">
+                    <img class="img-responsive portfolio-item" <img src="{{url_for('static', filename='img/logic.jpg')}}">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="/bob">
+                    <img class="img-responsive portfolio-item" <img src="{{url_for('static', filename='img/bob.jpg')}}">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="/james">
+                    <img class="img-responsive portfolio-item" <img src="{{url_for('static', filename='img/james.jpg')}}">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="/miguel">
+                    <img class="img-responsive portfolio-item" <img src="{{url_for('static', filename='img/miguel.jpg')}}">
+                </a>
+            </div>
+
+        </div>
+
+ <footer class="footer">
+    
+		<ul class="list-unstyled list-inline list-social-icons">
+		<li> 
+		    <a href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-2x"></i></a>
+		</li>
+		<li> 
+		    <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter-square fa-2x"></i></a>
+		</li>
+		<li> 
+		    <a href="https://www.youtube.com/"><i class="fa fa-youtube-square fa-2x"></i></a>
+		</li>
+      </footer>
+	  
+{% endblock %}
