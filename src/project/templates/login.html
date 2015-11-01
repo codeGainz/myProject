@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+{% block content %}
+{% if error %}
+
+<div class="alert alert-danger" role="alert">
+  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  <span class="sr-only">Error:</span> 
+  <strong>Error:</strong> {{ error}} </div>
+ 
+
+{% endif %}
+
+<div class="wrapper">
+<div class="form-signin"> 
+<h2 class="form-heading"> Please sign in </h2>
+<form action= "" method= "post">
+<input type=text class="form-control" name=username placeholder="username" value=>
+<input type=password class="form-control" name=password placeholder="password">
+<p><input type=submit class="btn btn-lg btn-primary btn-block" value =Login>
+</form>
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+
+<div class="alert alert-info" role="alert">  
+{% for message in messages %}
+      {{ message }}
+</div>
+{% endfor %}
+
+{% endif %}
+{% endwith %}
+</div>
+</div>
+ 
+	  <footer class="footer">
+    
+		<ul class="list-unstyled list-inline list-social-icons">
+		<li> 
+		    <a href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-2x"></i></a>
+		</li>
+		<li> 
+		    <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter-square fa-2x"></i></a>
+		</li>
+		<li> 
+		    <a href="https://www.youtube.com/"><i class="fa fa-youtube-square fa-2x"></i></a>
+		</li>
+      </footer>
+
+
+{% endblock %}
